@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="passwordgenerator">
+    <h1>Random Password Generator</h1>
+    <div class="container">
+      <textarea rows="2" cols="30" id="password" readonly></textarea>
+      <br><br><span>Set Password Length (Funny Passwords are length independent):</span>
+      <input type="number" id="length" min="4" max="32" width="20px" value="4">
+
+      <p>Select atleast one of the boxes</p>
+      <label class="first">Symbols:&nbsp;&nbsp;&nbsp;</label>
+      <input type="checkbox" id="symbol"><br>
+      <br><label class="first">Lowercase:</label>
+      <input type="checkbox" id="lowercase"><br>
+      <br><label class="first">Uppercase:</label>
+      <input type="checkbox" id="uppercase"><br>
+      <br><label class="first">Numbers:&nbsp;&nbsp;&nbsp;</label>
+      <input type="checkbox" id="number"><br>
+
+      <p>Select the type of password you want</p>
+      <label class="second">Super Strong</label>
+      <input type="radio" name="type" id="superstrong">
+      <label class="second">Strong</label>
+      <input type="radio" name="type" id="strong">
+      <label class="second">Weak</label>
+      <input type="radio" name="type" id="weak">
+      <label class="second">Funny</label>
+      <input type="radio" name="type" id="funny"><br><br>
+      <button id="generate">Generate</button>
+      <button id="copy">Copy</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
